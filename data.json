@@ -1,0 +1,196 @@
+{
+  "ticketSystem": {
+    "title": "Ticket Management System",
+    "version": "1.0.0",
+    "dropdowns": [
+      {
+        "id": 1,
+        "name": "status",
+        "label": "Status Ticket",
+        "options": [
+          { "value": "open", "label": "Open" },
+          { "value": "in_progress", "label": "In Progress" },
+          { "value": "pending", "label": "Pending" },
+          { "value": "resolved", "label": "Resolved" },
+          { "value": "closed", "label": "Closed" }
+        ]
+      },
+      {
+        "id": 2,
+        "name": "priority",
+        "label": "Prioritas",
+        "options": [
+          { "value": "low", "label": "Low" },
+          { "value": "medium", "label": "Medium" },
+          { "value": "high", "label": "High" },
+          { "value": "critical", "label": "Critical" }
+        ]
+      },
+      {
+        "id": 3,
+        "name": "category",
+        "label": "Kategori",
+        "options": [
+          { "value": "bug", "label": "Bug" },
+          { "value": "feature", "label": "Feature Request" },
+          { "value": "support", "label": "Support" },
+          { "value": "enhancement", "label": "Enhancement" },
+          { "value": "other", "label": "Lainnya" }
+        ]
+      },
+      {
+        "id": 4,
+        "name": "department",
+        "label": "Department",
+        "options": [
+          { "value": "it", "label": "IT Support" },
+          { "value": "sales", "label": "Sales" },
+          { "value": "marketing", "label": "Marketing" },
+          { "value": "finance", "label": "Finance" },
+          { "value": "hr", "label": "Human Resource" }
+        ]
+      },
+      {
+        "id": 5,
+        "name": "assignedTo",
+        "label": "Assign To",
+        "options": [
+          { "value": "unassigned", "label": "Unassigned" },
+          { "value": "john", "label": "John Doe" },
+          { "value": "jane", "label": "Jane Smith" },
+          { "value": "admin", "label": "Admin" },
+          { "value": "team", "label": "Support Team" }
+        ]
+      },
+      {
+        "id": 6,
+        "name": "urgency",
+        "label": "Urgency Level",
+        "options": [
+          { "value": "normal", "label": "Normal" },
+          { "value": "urgent", "label": "Urgent" },
+          { "value": "emergency", "label": "Emergency" }
+        ]
+      },
+      {
+        "id": 7,
+        "name": "resolution",
+        "label": "Resolution Type",
+        "options": [
+          { "value": "fixed", "label": "Fixed" },
+          { "value": "duplicate", "label": "Duplicate" },
+          { "value": "wontfix", "label": "Won't Fix" },
+          { "value": "workaround", "label": "Workaround" },
+          { "value": "pending", "label": "Pending" }
+        ]
+      },
+      {
+        "id": 8,
+        "name": "source",
+        "label": "Ticket Source",
+        "options": [
+          { "value": "email", "label": "Email" },
+          { "value": "phone", "label": "Phone" },
+          { "value": "chat", "label": "Live Chat" },
+          { "value": "portal", "label": "Customer Portal" },
+          { "value": "social", "label": "Social Media" }
+        ]
+      },
+      {
+        "id": 9,
+        "name": "severity",
+        "label": "Severity Level",
+        "options": [
+          { "value": "minor", "label": "Minor" },
+          { "value": "moderate", "label": "Moderate" },
+          { "value": "major", "label": "Major" },
+          { "value": "severe", "label": "Severe" }
+        ]
+      },
+      {
+        "id": 10,
+        "name": "sla",
+        "label": "SLA Time",
+        "options": [
+          { "value": "1hour", "label": "1 Hour" },
+          { "value": "4hours", "label": "4 Hours" },
+          { "value": "8hours", "label": "8 Hours" },
+          { "value": "24hours", "label": "24 Hours" },
+          { "value": "48hours", "label": "48 Hours" }
+        ]
+      },
+      {
+        "id": 11,
+        "name": "environment",
+        "label": "Environment",
+        "options": [
+          { "value": "production", "label": "Production" },
+          { "value": "staging", "label": "Staging" },
+          { "value": "development", "label": "Development" },
+          { "value": "testing", "label": "Testing" }
+        ]
+      },
+      {
+        "id": 12,
+        "name": "feedback",
+        "label": "Feedback Status",
+        "options": [
+          { "value": "waiting", "label": "Waiting for Feedback" },
+          { "value": "received", "label": "Feedback Received" },
+          { "value": "rejected", "label": "Rejected" },
+          { "value": "approved", "label": "Approved" }
+        ]
+      }
+    ],
+    "sampleTickets": [
+      {
+        "ticketId": "TKT-001",
+        "title": "Login Page Error",
+        "status": "open",
+        "priority": "high",
+        "category": "bug",
+        "department": "it",
+        "assignedTo": "john",
+        "urgency": "urgent",
+        "resolution": "pending",
+        "source": "email",
+        "severity": "major",
+        "sla": "4hours",
+        "environment": "production",
+        "feedback": "waiting"
+      },
+      {
+        "ticketId": "TKT-002",
+        "title": "Add Dark Mode Feature",
+        "status": "in_progress",
+        "priority": "medium",
+        "category": "feature",
+        "department": "it",
+        "assignedTo": "jane",
+        "urgency": "normal",
+        "resolution": "pending",
+        "source": "portal",
+        "severity": "minor",
+        "sla": "24hours",
+        "environment": "staging",
+        "feedback": "received"
+      },
+      {
+        "ticketId": "TKT-003",
+        "title": "Password Reset Not Working",
+        "status": "pending",
+        "priority": "critical",
+        "category": "support",
+        "department": "it",
+        "assignedTo": "admin",
+        "urgency": "emergency",
+        "resolution": "pending",
+        "source": "chat",
+        "severity": "severe",
+        "sla": "1hour",
+        "environment": "production",
+        "feedback": "waiting"
+      }
+    ]
+  }
+}
